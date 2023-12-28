@@ -130,3 +130,13 @@ Posteriormente lo ejecutamos con npm run [alias]
 ```bash
   npm run test
 ```
+
+Si declaramos un script con la key `start`, este comando se puede ejecutar sin un `run`
+
+```bash
+  npm start
+```
+
+## 28..Nodemon
+
+Es un monitor de cambios en archivos que reinicia automáticamente la aplicación Node.js cuando detecta modificaciones en los archivos del proyecto. Esto elimina la necesidad de reiniciar manualmente el servidor cada vez que se realizan cambios en el código fuente, lo que agiliza el proceso de desarrollo.
