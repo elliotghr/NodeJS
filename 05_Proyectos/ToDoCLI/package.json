@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "dev-file": "nodemon app-with-file.js",
+    "start-file": "nodemon app-with-file.js"
   },
   "keywords": [],
   "author": "Elliot César <gunsnroses.2617@gmail.com>z",
