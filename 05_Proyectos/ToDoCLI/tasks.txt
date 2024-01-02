@@ -1,0 +1,3 @@
+Terminar la implementación de la app|true
+Comenzar siguiente aplicación de optimizar imagenes con Node|false
+Terminar el curso de NodeJS|false

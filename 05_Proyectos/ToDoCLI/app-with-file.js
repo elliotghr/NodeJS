@@ -28,18 +28,32 @@ function displayMenu() {
 
 function loadTasks() {
   try {
+    console.log("\n");
     const data = readFileSync(DB_FILE, "utf-8");
     const lines = data.split("\n");
+    // Forzamos a tasks como un array vacío
     tasks.length = 0;
 
     lines.forEach((line) => {
-      const [task, completed] = line.split("|");
-      tasks.push({ task, completed });
+      // Cuando no se encuentre un espacio en blanco...
+      if (line.trim() !== "") {
+        const [task, completed] = line.split("|");
+        // con completed: completed === true forzamos a convertir el tipo de dato a bool
+        tasks.push({ task, completed: completed === "true"});
+      }
+
+      console.log(chalk.green.bold("Las tareas se han cargado desde la DB"));
     });
-  } catch (error) {}
+  } catch (error) {
+    console.log(chalk.green.bold("No hay tareas por hacer 😁✌"));
+  }
 }
 
-function saveTask() {}
+function saveTask() {
+  const data = tasks.map((task) => `${task.task}|${task.completed}`).join("\n");
+  writeFileSync(DB_FILE, data, "utf-8");
+  console.log(chalk.green.bold("¡Tarea agregada con éxito!"));
+}
 
 function addTask() {
   console.log("\n");
@@ -120,7 +134,7 @@ function chooseOption() {
           deleteTask();
           break;
         case "5":
-          console.log(chalk.redBright("Adios ✌"));
+          console.log(chalk.blueBright("Adios ✌"));
           // Método que cierra el stream
           rl.close();
           break;
@@ -145,6 +159,7 @@ function deleteTask() {
       if (index >= 0 && index < tasks.length) {
         tasks.splice(index, 1);
         console.log(chalk.greenBright("Tarea eliminada con éxito ✔"));
+        saveTask();
         displayMenu();
         chooseOption();
       } else {
