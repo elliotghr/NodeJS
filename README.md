@@ -140,3 +140,7 @@ Si declaramos un script con la key `start`, este comando se puede ejecutar sin u
 ## 28..Nodemon
 
 Es un monitor de cambios en archivos que reinicia automáticamente la aplicación Node.js cuando detecta modificaciones en los archivos del proyecto. Esto elimina la necesidad de reiniciar manualmente el servidor cada vez que se realizan cambios en el código fuente, lo que agiliza el proceso de desarrollo.
+
+## Notas
+
+El process de Node tiene un método llamado [`argv()`](https://nodejs.org/docs/latest/api/process.html#processargv) donde podemos obtener todos los argumentos del comando al lanzar el proceso de Node
