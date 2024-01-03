@@ -187,3 +187,19 @@ Algunas de las características clave de Express.js incluyen:
 1. Gestión de peticiones y respuestas: Ofrece métodos para manejar solicitudes y enviar respuestas al cliente.
 
 1. Manejo de errores: Permite gestionar y manejar los errores que puedan ocurrir durante el procesamiento de las solicitudes.
+
+## Motores de plantilla
+
+Un motor de plantillas es una herramienta que simplifica la generación de documentos (HTML, XML, texto plano, etc.) combinando plantillas predefinidas con datos dinámicos. Estos motores permiten a los desarrolladores crear de manera eficiente documentos con contenido variable, donde ciertas secciones pueden cambiar dependiendo de los datos que se desean mostrar.
+
+En el contexto del desarrollo web, los motores de plantillas son comúnmente utilizados para generar vistas HTML dinámicas basadas en los datos proporcionados por una aplicación web. En lugar de escribir manualmente grandes bloques de HTML con valores específicos, los desarrolladores pueden utilizar un motor de plantillas para definir una estructura base y luego incrustar variables o lógica de programación que será reemplazada por los datos dinámicos en tiempo de ejecución.
+
+Estos motores permiten:
+
+Reutilización de código: Las plantillas pueden ser reutilizadas para generar múltiples vistas o páginas con contenido similar.
+
+Separación de preocupaciones: Facilitan la separación entre la lógica de presentación (HTML, diseño) y la lógica de la aplicación (datos, funcionalidad), lo que hace más fácil mantener y actualizar una aplicación.
+
+Inclusión de lógica: Además de insertar datos dinámicos, algunos motores de plantillas también permiten incluir lógica simple, como condicionales o bucles, para generar contenido de manera dinámica.
+
+Ejemplos comunes de motores de plantillas utilizados en el desarrollo web incluyen Pug (anteriormente conocido como Jade), EJS (Embedded JavaScript), Handlebars, Mustache, Jinja (para Python), Twig (para PHP), entre otros. Cada uno tiene su propia sintaxis y características específicas, pero todos comparten el propósito de facilitar la creación dinámica de contenido en aplicaciones web.
