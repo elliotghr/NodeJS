@@ -203,3 +203,7 @@ Separación de preocupaciones: Facilitan la separación entre la lógica de pres
 Inclusión de lógica: Además de insertar datos dinámicos, algunos motores de plantillas también permiten incluir lógica simple, como condicionales o bucles, para generar contenido de manera dinámica.
 
 Ejemplos comunes de motores de plantillas utilizados en el desarrollo web incluyen Pug (anteriormente conocido como Jade), EJS (Embedded JavaScript), Handlebars, Mustache, Jinja (para Python), Twig (para PHP), entre otros. Cada uno tiene su propia sintaxis y características específicas, pero todos comparten el propósito de facilitar la creación dinámica de contenido en aplicaciones web.
+
+## Generador de aplicaciones
+
+En Express, un generador (también conocido como generador de aplicaciones o scaffold) es una herramienta que proporciona una estructura básica para crear una aplicación web de Node.js utilizando el framework Express. Estos generadores permiten a los desarrolladores iniciar rápidamente un nuevo proyecto con una estructura predefinida, incluyendo archivos y carpetas comunes, configuraciones iniciales y algunos archivos de ejemplo para comenzar a desarrollar.
