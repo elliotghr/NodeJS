@@ -144,3 +144,46 @@ Es un monitor de cambios en archivos que reinicia automáticamente la aplicació
 ## Notas
 
 El process de Node tiene un método llamado [`argv()`](https://nodejs.org/docs/latest/api/process.html#processargv) donde podemos obtener todos los argumentos del comando al lanzar el proceso de Node
+
+# Curso Desarrollo Web con Node.js y Express.js
+
+## Modulos
+
+### Módulo URL
+
+El modulo url nos permite obtener los fragmentos de la url, los cuales son el dominio, el protocolo, el pathname, entre otros.
+Con el uso del método `parse` podemos obtener esos fragmentos directamente desde la url, por otro lado, con el método `format` podemos contruir una url pasando los fragmentos en un objeto.
+
+### Módulo Path
+
+Con este método podemos obtener la ruta del archivo. Del lado del servidor, este método nos permite construir las rutas para que la aplicación funcione correctamente
+El método `join` nos permite unir rutas
+Con el método `resolve` podremos construir una ruta absoluta a partir de una ruta relativa
+
+Con `basename, dirname y extname` podemos extraer diferentes fragmentos de una ruta dada
+
+## Sniffer
+
+Un sniffer es un programa o dispositivo que intercepta, monitorea y registra el tráfico de datos que circula a través de una red de computadoras. Estas herramientas son utilizadas para capturar y analizar información como paquetes de datos, contraseñas, mensajes, y otros datos sensibles que se transmiten a través de una red.
+
+Existen diferentes tipos de sniffers: algunos pueden ser usados para propósitos legítimos, como la resolución de problemas de red, seguridad informática y análisis de tráfico para optimizar el rendimiento de una red. Sin embargo, también pueden ser empleados de manera maliciosa por personas no autorizadas para obtener información confidencial, lo que podría comprometer la privacidad y seguridad de los datos.
+
+El uso de sniffers puede ser tanto ético como legal, dependiendo de la situación y el propósito para el que se empleen. Por ejemplo, los administradores de red pueden usar sniffers para diagnosticar problemas de red y mejorar la seguridad, siempre y cuando cuenten con la autorización y se adhieran a las políticas y leyes de privacidad y seguridad pertinentes.
+
+## Express JS
+
+Express.js es un popular framework web construido con JavaScript y ejecutado en Node.js. Se utiliza para crear aplicaciones web y APIs de manera rápida y sencilla, proporcionando un conjunto robusto de características para el desarrollo de servidores web en Node.js.
+
+Express.js simplifica la creación de aplicaciones web al proporcionar una serie de utilidades y métodos que permiten manejar rutas, peticiones (requests) y respuestas (responses) de manera eficiente. Es minimalista y flexible, lo que significa que ofrece una base sólida para construir aplicaciones web, pero permite la incorporación de otros módulos y middleware según las necesidades específicas del proyecto.
+
+Algunas de las características clave de Express.js incluyen:
+
+1. Manejo de rutas: Permite definir rutas HTTP para responder a peticiones específicas (GET, POST, PUT, DELETE, etc.).
+
+1. Midleware: Facilita la inclusión de funciones de middleware para procesar y manipular las peticiones antes de que lleguen a las rutas finales.
+
+1. Integración de plantillas: Facilita el uso de motores de plantillas como Pug, EJS o Handlebars para generar y renderizar vistas dinámicas.
+
+1. Gestión de peticiones y respuestas: Ofrece métodos para manejar solicitudes y enviar respuestas al cliente.
+
+1. Manejo de errores: Permite gestionar y manejar los errores que puedan ocurrir durante el procesamiento de las solicitudes.
