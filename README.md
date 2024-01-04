@@ -207,3 +207,18 @@ Ejemplos comunes de motores de plantillas utilizados en el desarrollo web incluy
 ## Generador de aplicaciones
 
 En Express, un generador (también conocido como generador de aplicaciones o scaffold) es una herramienta que proporciona una estructura básica para crear una aplicación web de Node.js utilizando el framework Express. Estos generadores permiten a los desarrolladores iniciar rápidamente un nuevo proyecto con una estructura predefinida, incluyendo archivos y carpetas comunes, configuraciones iniciales y algunos archivos de ejemplo para comenzar a desarrollar.
+
+## ExpressMVC
+
+Definimos una estructura de carpetas donde existen controllers/, views/, y public, de momento no se creará una carpeta models/ ya que se hará una simulación a una DB.
+Instalaremos las siguientes dependencias:
+
+- cors
+- express
+- helmet
+- morgan
+- pug
+
+En nuestro archivo app.js definimos la estructura de nuestra aplicación de NodeJS, declaramos las librerías a usar, las rutas de nuestra carpeta publica y views, el motor de plantillas a usar, la codificación de nuestra app y las rutas de nuestro proyecto
+
+La logica de cada una de las rutas de nuestra aplicación irá en un controlador
