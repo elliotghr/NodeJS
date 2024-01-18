@@ -21,6 +21,7 @@ const processImg = async () => {
   try {
     // Con fse obtenemos el directorio de las imagenes de entrada
     const files = await fse.readdir(inputFolder);
+    console.log(files);
     for (const file of files) {
       // Declaramos las referencias de entrada y de salida
       let inputPath = `${inputFolder}/${file}`;

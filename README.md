@@ -13,6 +13,22 @@ Ejemplos de entornos de ejecución como NodeJS:
 - Deno
 - Bun
 
+Caracteristicas:
+
+- Se puede configurar sin necesidad de un navegador
+- Es asíncrono y está orientado a eventos
+- Utiliza el motor V8 de chrome, el cual es muy rápido y está desacoplado del navegador
+
+### Razones para aprender NodeJS
+
+1. Demanda del mercado:
+   - Cualquier compañia ocupa NodeJS no solo en el backend y hasta de manera indirecta
+   - Es parte central del stack MEAN (Mongo, Express, Angular, NodeJS)
+2. Los conocimientos de JS se aplican aquí
+3. Creación de aplicaciónes web, API REST, sniffings, etc.
+4. Comunidad inmensa, registro de paquetes más grande del mundo
+5. Es rápido, escalable, facil de desplegar (incluso de forma gratuita)
+
 ## 5..Instalación y Configuración
 
 Tipos de instalación
@@ -149,6 +165,14 @@ El process de Node tiene un método llamado [`argv()`](https://nodejs.org/docs/l
 
 ## Modulos
 
+## [Módulo OS](https://nodejs.org/api/os.html)
+
+El módulo node:os proporciona propiedades y métodos de utilidad relacionados con el sistema operativo.
+
+## [Módulo FS](https://nodejs.org/api/fs.html)
+
+El módulo node:fs permite interactuar con el sistema de archivos de una manera modelada según las funciones POSIX estándar.
+
 ### Módulo URL
 
 El modulo url nos permite obtener los fragmentos de la url, los cuales son el dominio, el protocolo, el pathname, entre otros.
@@ -222,3 +246,17 @@ Instalaremos las siguientes dependencias:
 En nuestro archivo app.js definimos la estructura de nuestra aplicación de NodeJS, declaramos las librerías a usar, las rutas de nuestra carpeta publica y views, el motor de plantillas a usar, la codificación de nuestra app y las rutas de nuestro proyecto
 
 La logica de cada una de las rutas de nuestra aplicación irá en un controlador
+
+## Variables globales - GlobalThis
+
+GlobalThis es una variable global en nuestr aplicación, sin importar si está en una función o en cualquier parte del código.
+
+En el navegador apunta a `window`
+
+En NODEJS apunta a global
+
+En node siempre debemos ocupar `globalThis` y no solo `global`
+
+## Async Await
+
+Usando ESM podremos utilizar Async-await en el cuerpo del código sin necesidad de meterlo en una función

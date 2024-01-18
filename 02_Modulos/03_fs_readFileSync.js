@@ -1,7 +1,8 @@
 const fs = require('node:fs')
 
 console.log('Leyendo el primer archivo...')
-const text = fs.readFileSync('./archivo.txt', 'utf-8')
+// https://nodejs.org/api/fs.html#fsreadfilesyncpath-options
+const text = fs.readFileSync('./archivo.txt', 'utf-8') // Si no se especifica la codificación, entonces regresará un buffer
 console.log('primer texto:', text)
 
 console.log('--> Hacer cosas mientras lee el archivo...')
