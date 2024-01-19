@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   res.send("<h1>Hola mundo desde Express.js con el método send</h1>");
 });
 
-// Endpoint que retorna un archivo json
+// Endpoint que retorna la respuesta en formato json
 app.get("/json", (req, res) => {
   res.json({
     name: "nano",

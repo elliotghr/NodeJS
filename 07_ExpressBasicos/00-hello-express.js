@@ -2,7 +2,7 @@ import express from "express";
 
 // Inicializamos express
 const app = express();
-
+const port = 3000;
 // Creamos un Router
 // https://expressjs.com/en/starter/basic-routing.html
 
@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
 });
 
 // Iniciamos el servidor y escuchamos las conexiones en el puerto 3000
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Inciando Express desde http://localhost:3000");
 });
