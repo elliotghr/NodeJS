@@ -66,8 +66,10 @@ app.post("/movies", (req, res) => {
 
   // Si la validación no fue exitosa..
   if (!result.success) {
+    // Capturamos el error: https://zod.dev/?id=error-handling
+    let error = result.error.issues[0];
     // 422 Unprocessable Entity
-    return res.status(400).json({ error: JSON.parse(result.error.message) });
+    return res.status(422).json({ error });
   }
 
   // en base de datos

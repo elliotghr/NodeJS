@@ -32,7 +32,7 @@ const movieSchema = z.object({
 });
 
 function validateMovie(object) {
-  return movieSchema.parse(object);
+  return movieSchema.safeParse(object);
 }
 
 function validatePartialMovie(input) {
