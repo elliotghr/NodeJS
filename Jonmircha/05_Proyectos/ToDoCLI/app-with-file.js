@@ -39,11 +39,10 @@ function loadTasks() {
       if (line.trim() !== "") {
         const [task, completed] = line.split("|");
         // con completed: completed === true forzamos a convertir el tipo de dato a bool
-        tasks.push({ task, completed: completed === "true"});
+        tasks.push({ task, completed: completed.trim() === "true" });
       }
-
-      console.log(chalk.green.bold("Las tareas se han cargado desde la DB"));
     });
+    console.log(chalk.green.bold("Las tareas se han cargado desde la DB"));
   } catch (error) {
     console.log(chalk.green.bold("No hay tareas por hacer 😁✌"));
   }
